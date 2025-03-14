@@ -27,7 +27,7 @@ int f(int m,int d){
         }
         
     }
-    else{
+    else if(m==2){
         if(D<=28){
             cout<<"Yes";
             return 0;
@@ -37,6 +37,10 @@ int f(int m,int d){
             return 0;
         }
 
+    }
+    else{
+        cout<<"No";
+        return 0;
     }
 }
 
