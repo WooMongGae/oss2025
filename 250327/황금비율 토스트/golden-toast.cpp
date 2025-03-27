@@ -32,8 +32,6 @@ int main() {
           if(it!=l.begin()){
             it--;
           }
-        }
-          
         }else if (command == 'R')
         {
           if(it!=l.end()){
@@ -41,7 +39,9 @@ int main() {
           }
         }else if (command == 'D')
         {
-          l.erase(it);
+          if(it != l.end()){
+            it=l.erase(it);
+          }
         }
   
         
