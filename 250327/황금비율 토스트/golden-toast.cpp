@@ -32,6 +32,7 @@ int main() {
           if(it!=l.begin()){
             it--;
           }
+        }
           
         }else if (command == 'R')
         {
