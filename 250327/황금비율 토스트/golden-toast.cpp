@@ -26,7 +26,6 @@ int main() {
             cin >> c;
 
             l.insert(it, c);
-            it++;
         }else if (command == 'L')
         {
           if(it!=l.begin()){
