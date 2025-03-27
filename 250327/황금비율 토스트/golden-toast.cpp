@@ -35,7 +35,7 @@ int main() {
           
         }else if (command == 'R')
         {
-          if(it!=l.end){
+          if(it!=l.end()){
             it++;
           }
         }else if (command == 'D')
