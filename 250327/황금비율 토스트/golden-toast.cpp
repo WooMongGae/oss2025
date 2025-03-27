@@ -24,6 +24,11 @@ int main() {
         if (command == 'P') {
             char c;
             cin >> c;
+
+            if(it == l.end()){
+              it--;
+            }
+
             l.insert(it, c);
             it++;
         }else if (command == 'L')
