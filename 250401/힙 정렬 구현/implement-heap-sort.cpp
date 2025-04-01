@@ -17,11 +17,19 @@ void heapify(int biggest,int big2){
     int j = big2*2+1;
 
     if(l<=biggest&&arr[l]>arr[i]){
-        swap(arr[l],arr[i]);
+        i = l;
     }
     if(j<=biggest&&arr[j]>arr[i]){
-        swap(arr[j],arr[i]);
+        i = j;
     }
+
+    if(i != big2){
+        heapify(biggest,i);
+        swap(arr[i],arr[big2]);
+
+    }
+
+
 
     
 
@@ -29,15 +37,15 @@ void heapify(int biggest,int big2){
 
 void sort(){
 
-    for(int j = n;j>=2;j--){
-        for(int i = j/2;i>=1;i--){
-            heapify(j,i);
-        }
-    
-        swap(arr[j],arr[1]);
-    
-
+    for(int i = n/2;i>=1;i--){
+        heapify(n+1,i);
     }
+    
+    for(int i = n;i>=1;i--){
+        swap(arr[1],arr[i]);
+        heapify(i-1,1);
+    }
+
     
 }
 
