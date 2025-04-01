@@ -38,7 +38,7 @@ void heapify(int biggest,int big2){
 void sort(){
 
     for(int i = n/2;i>=1;i--){
-        heapify(n+1,i);
+        heapify(n,i);
     }
     
     for(int i = n;i>=1;i--){
