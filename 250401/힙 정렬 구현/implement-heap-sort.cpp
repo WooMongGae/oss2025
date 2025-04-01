@@ -24,8 +24,8 @@ void heapify(int biggest,int big2){
     }
 
     if(i != big2){
-        heapify(biggest,i);
         swap(arr[i],arr[big2]);
+        heapify(biggest,i);
 
     }
 
