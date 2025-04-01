@@ -29,7 +29,7 @@ void heapify(int biggest,int big2){
 
 void sort(){
 
-    for(int j = n;j>=1;j--){
+    for(int j = n;j>=2;j--){
         for(int i = j/2;i>=1;i--){
             heapify(j,i);
         }
