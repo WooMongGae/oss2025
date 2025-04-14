@@ -14,6 +14,7 @@ void f(int a){
 
 int main() {
     cin >> N;
+    f(N);
 
     // Please write your code here.
 
