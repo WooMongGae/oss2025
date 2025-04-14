@@ -6,8 +6,8 @@ int n;
 int arr[100];
 
 int f(int a){
-    if( a== 1) return arr[1];
-    return max(arr[a],f(a-1));
+    if( a == 0) return arr[0];
+    return max(arr[a-1],f(a-2));
 }
 
 int main() {
