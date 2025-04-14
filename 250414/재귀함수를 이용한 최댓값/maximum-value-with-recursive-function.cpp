@@ -7,7 +7,7 @@ int arr[100];
 
 int f(int a){
     if( a == 0) return arr[0];
-    return max(arr[a-1],f(a-2));
+    return max(arr[a],f(a));
 }
 
 int main() {
@@ -16,7 +16,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
-    cout<<f(n);
+    cout<<f(n-1);
     
     // Please write your code here.
 
