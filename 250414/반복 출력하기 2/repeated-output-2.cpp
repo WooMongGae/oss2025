@@ -5,9 +5,11 @@ using namespace std;
 int N;
 
 void f(int a){
-    for(int i = 0; i<a;i++){
-        cout<<"HelloWorld"<<endl;
-    }
+    if(a == 0) return;
+
+    cout<<"HelloWorld"<<endl;
+
+    f(a-1);
 
 }
 
