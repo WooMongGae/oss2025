@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
@@ -11,11 +12,10 @@ int gcd(int a , int b){
     return gcd(b,a%b);
 }
 
-int f(int a){
-    if(a==0) return arr[a];
-
-    return gcd(arr[a],f(a-1))*min(arr[a],f(a-1));
-
+int f(int x){ //f의 역할 : x이하까지의 수들의 최대공약수 구하기
+    if(x==0) return arr[x];
+    
+    return arr[x]*f(x-1)/gcd(arr[x],f(x-1));
 }
 
 int main() {
