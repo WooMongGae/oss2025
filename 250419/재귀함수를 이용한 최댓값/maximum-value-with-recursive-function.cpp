@@ -6,7 +6,7 @@ int arr[100];
 int f(int a){
     if(a==0) return arr[0];
 
-    return max(arr[a],f(a-1))
+    return max(arr[a],f(a-1));
 }
 
 int main(){
