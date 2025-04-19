@@ -9,7 +9,7 @@ int f(int a){
 int main(){
     int n;
     cin>>n;
-    f(n);
+    cout<<f(n);
 
 
 }
