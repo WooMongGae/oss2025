@@ -4,7 +4,8 @@ using namespace std;
 int arr[100];
 
 int gcd(int x,int y){
-    for(int i = 1;i<=min(x,y);i++){
+    if(x==1||y==1) return max(x,y);
+    for(int i = 2;i<=min(x,y);i++){
         if(x%i==0&&y%i==0){
             return x*y/i;
         }
@@ -14,7 +15,7 @@ int gcd(int x,int y){
 
 int lcd(int a){
     if(a==0) return arr[0];
-    return gcd(arr[a],f(a-1));
+    return gcd(arr[a],lcd(a-1));
 }
 
 int main(){
