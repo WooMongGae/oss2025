@@ -4,13 +4,13 @@ using namespace std;
 int arr[100];
 
 int gcd(int x,int y){
-    if(x==1||y==1) return max(x,y);
-    for(int i = 2;i<=min(x,y);i++){
+    int gcd;
+    for(int i = 1;i<=min(x,y);i++){
         if(x%i==0&&y%i==0){
-            return x*y/i;
+            gcd = i;
         }
-
     }
+    return x*y/gcd;
 }
 
 int lcd(int a){
