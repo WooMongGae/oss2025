@@ -26,7 +26,7 @@ int main(){
             it++;
         }else if(command == 'D'){
             if(it == l.end()) continue;
-            l.erase(it);
+            it = l.erase(it);
         }else if(command == 'P'){
             char w;
             cin>>w;
