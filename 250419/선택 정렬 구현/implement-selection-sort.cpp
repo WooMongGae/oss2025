@@ -7,10 +7,11 @@ int arr[100];
 void select(){
     for(int i = 0;i<n;i++){
         int key = i;
-        for(int j = i;i<n-1;i++){
+        for(int j = i;i<n-1;j++){
             if(arr[j]<arr[i]){
                 key = j;
             }
+
         }
         int temp = arr[i];
         arr[i] = arr[key];
