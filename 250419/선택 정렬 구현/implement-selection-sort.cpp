@@ -7,8 +7,8 @@ int arr[100];
 void select(){
     for(int i = 0;i<n;i++){
         int key = i;
-        for(int j = i;i<n-1;j++){
-            if(arr[j]<arr[i]){
+        for(int j = i;j<n;j++){
+            if(arr[j]<arr[key]){
                 key = j;
             }
 
