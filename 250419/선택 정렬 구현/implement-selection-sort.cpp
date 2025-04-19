@@ -5,9 +5,9 @@ int n;
 int arr[100];
 
 void select(){
-    for(int i = 0;i<n-1;i++){
+    for(int i = 0;i<n;i++){
         int key = i;
-        for(int j = i;i<n;i++){
+        for(int j = i;i<n-1;i++){
             if(arr[j]<arr[i]){
                 key = j;
             }
