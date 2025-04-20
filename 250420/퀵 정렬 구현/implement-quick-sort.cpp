@@ -22,7 +22,7 @@ void q(int l,int h){
     if(l<h){
         int index = p(l,h);
         q(l,index-1);
-        q(index+1,l);
+        q(index+1,h);
     }else{
         return;
     }
