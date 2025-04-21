@@ -5,11 +5,14 @@ int arr[100];
 
 void bubble(){
     bool sorted = true;
+    int temp;
     do{
         sorted = true;
         for(int i = 0;i<n-1;i++){
             if(arr[i]>arr[i+1]){
-                swap(arr[i],arr[i+1]);
+                temp = arr[i];
+                arr[i] = arr[i+1];
+                arr[i+1] = temp;
                 sorted = false;
             }
         }
@@ -27,4 +30,5 @@ int main(){
     for(int i = 0;i<n;i++){
         cout<<arr[i]<<" ";
     }
+
 }
