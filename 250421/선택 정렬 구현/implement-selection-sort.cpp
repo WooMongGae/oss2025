@@ -1,21 +1,18 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
-
 int n;
 int arr[100];
 
 void select(){
-
-    for(int i = 0; i <n;i++){
-        int max = i;
-
-        for(int j = i;j<n;j++){
-            if(arr[j]<arr[max]){
-                max = j;
+    for(int i = 0;i<n;i++){
+        int key = i;
+        for(int j = 0;j<n;j++){
+            if(arr[j]<arr[key]){
+                key = j;
             }
         }
-        swap(arr[i],arr[max]);
+        swap(arr[i],arr[key]);
     }
 }
 
@@ -24,9 +21,12 @@ int main(){
     for(int i = 0;i<n;i++){
         cin>>arr[i];
     }
+
     select();
+
     for(int i = 0;i<n;i++){
-        cout<<arr[i]<<" ";
+        cout<<arr[i];
     }
+
 
 }
