@@ -8,7 +8,7 @@ void merge(int l,int m,int h){
     int i = l;
     int j = m+1;
     int index = l;
-    new_arr[100000];
+    int new_arr[100000];
     while(i<=m&&j<=h){
         if(arr[i]>arr[j]){
             new_arr[index++]=arr[j++];
