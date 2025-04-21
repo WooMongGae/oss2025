@@ -9,7 +9,7 @@ int quick(int l,int h){
     int index = l;
     for(;index<h;index++){
         if(arr[index]<pivot){
-            i++
+            i++;
             swap(arr[i],arr[index]);
         }
     }
