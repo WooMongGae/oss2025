@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int n;
-arr[100];
+int arr[100];
 
 void insert(){
     for(int i = 1;i<n;i++){
