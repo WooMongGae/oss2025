@@ -1,19 +1,21 @@
 #include <iostream>
-#include <algorithm>
 using namespace std;
 int n;
 int arr[100];
 
 void select(){
     for(int i = 0;i<n;i++){
-        int key = i;
+        int min = i;
         for(int j = i;j<n;j++){
-            if(arr[j]<arr[key]){
-                key = j;
+            if(arr[j]>arr[min]){
+                min = j;
             }
         }
-        swap(arr[i],arr[key]);
+        int temp = arr[min];
+        arr[min] = arr[i];
+        arr[i] = temp;
     }
+
 }
 
 int main(){
@@ -23,10 +25,8 @@ int main(){
     }
 
     select();
-
     for(int i = 0;i<n;i++){
         cout<<arr[i]<<" ";
     }
-
 
 }
