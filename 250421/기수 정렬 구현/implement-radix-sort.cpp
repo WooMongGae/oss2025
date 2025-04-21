@@ -1,4 +1,4 @@
-#include <iostrean>
+#include <iostream>
 #include <algorithm>
 #include <vector>
 int n;
