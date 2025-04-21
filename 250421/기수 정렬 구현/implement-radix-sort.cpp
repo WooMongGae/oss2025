@@ -15,7 +15,7 @@ void number(){
     int index = 0;
     for(int i = 0;i<10;i++){
       for(int j = 0;j<v[i].size();j++){
-        arr[index] = v[i][j]
+        arr[index] = v[i][j];
         index++;
       }
     }
