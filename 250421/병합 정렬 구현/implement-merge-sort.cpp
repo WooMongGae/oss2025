@@ -12,7 +12,7 @@ void merge(int l,int m,int h){
         if(arr[i]<arr[j]){
             new_arr[index++] = arr[i++];
         }else{
-            new_arr[index++] = arr[i++];
+            new_arr[index++] = arr[j++];
         }
     }
 
