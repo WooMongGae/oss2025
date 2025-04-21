@@ -1,47 +1,51 @@
 #include<iostream>
 #include <algorithm>
 using namespace std;
-
 int n;
-int arr[100001];
+int arr[100000];
 
 void heapify(int max,int i){
     int largest = i;
-    int a=i*2;
-    int b=i*2+1;
+    int a= i*2;
+    int b= i*2+1;
 
     if(a<=max&&arr[largest]<arr[a]){
         largest = a;
     }
+
     if(b<=max&&arr[largest]<arr[b]){
         largest = b;
     }
+
     if(largest !=i){
-        swap(arr[largest],arr[i]);
+        swap(arr[i],arr[largest]);
         heapify(max,largest);
     }
-
 }
 
-void heap(){
-    for(int i =n/2;i>=1;i--){
+void hip(){
+    for(int i = n/2;i>=1;i--){
         heapify(n,i);
     }
-
-    for(int i = n;i>=2;i--){
-        swap(arr[1],arr[i]);
+    for(int i = n;i>=1;i--){
+        swap(arr[i],arr[1]);
         heapify(i-1,1);
     }
+
 }
 
 int main(){
-    cin>>n;
-    for(int i = 1;i<=n;i++){
+    cin >> n;
+    for(int i =1;i<=n;i++){
         cin>>arr[i];
     }
 
-    heap();
+    hip();
+
     for(int i = 1;i<=n;i++){
         cout<<arr[i]<<" ";
     }
+
+
+
 }
