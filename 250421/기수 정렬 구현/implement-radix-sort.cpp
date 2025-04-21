@@ -1,6 +1,7 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
+using namespace std;
 int n;
 int arr[100000];
 
