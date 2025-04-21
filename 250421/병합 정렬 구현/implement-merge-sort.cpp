@@ -3,11 +3,11 @@ using namespace std;
 int n;
 int arr[100000];
 
-int merge(int l,int m,int h){
+void merge(int l,int m,int h){
     int i = l;
     int j = m+1;
-    int new_arr[n];
-    int index = 0;
+    int new_arr[100000];
+    int index = l;
 
     while(i<=m&&j<=h){
         if(arr[i]<arr[j]){
