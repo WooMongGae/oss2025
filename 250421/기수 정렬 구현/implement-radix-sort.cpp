@@ -7,7 +7,7 @@ int arr[100000];
 
 void number(){
   int pos = 1;
-  for(int i =0;i<n;i++){
+  for(int i =0;i<6;i++){
     vector<int> v[10];
     for(int i =0;i<n;i++){
       v[arr[i]/pos%10].push_back(arr[i]);
