@@ -17,7 +17,7 @@ int merge(int l,int m,int h){
         }else{
             new_arr[index] = arr[j];
             index++; 
-            j++
+            j++;
         }
     }
 
