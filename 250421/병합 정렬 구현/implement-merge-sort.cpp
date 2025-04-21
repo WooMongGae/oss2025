@@ -25,7 +25,7 @@ void merge(int l,int m,int h){
     }
 
     for(int k = l;k<h;k++){
-        arr[i]=new_arr[i];
+        arr[k]=new_arr[k];
     }
 }
 
