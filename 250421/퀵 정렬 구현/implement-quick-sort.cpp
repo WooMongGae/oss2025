@@ -20,7 +20,7 @@ int quick(int l,int h){
     return i+1;
 }
 
-void quicksort(int l;int h){
+void quicksort(int l,int h){
     if(l<h){
         int pos = quick(l,h);
         quicksort(l,pos-1);
@@ -40,7 +40,7 @@ int main(){
     quicksort(0,n-1);
 
     for(int i = 0;i<n;i++){
-        cout<<arr[i];
+        cout<<arr[i]<<" ";
     }
 
 }
