@@ -28,9 +28,9 @@ void heap(){
         heapify(n,i);
     }
 
-    for(int i = 1;i<=n;i++){
-        swap(arr[i],arr[n-i+1]);
-        heapify(n-i,1);
+    for(int i = n;i<=1;i--){
+        swap(arr[1],arr[i]);
+        heapify(i-1,1);
     }
 }
 
