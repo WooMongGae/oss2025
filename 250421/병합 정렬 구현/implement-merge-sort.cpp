@@ -27,7 +27,7 @@ int merge(int l,int m,int h){
             i++;
     }
 
-    while(j<=l){
+    while(j<=h){
             new_arr[index] = arr[j];
             index++;
             j++;
@@ -45,7 +45,7 @@ void mergesort(int l,int h){
         int m = (l+h)/2;
         mergesort(l,m);
         mergesort(m+1,h);
-        merge(l,h);
+        merge(l,m,h);
 
 
     }
