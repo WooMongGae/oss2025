@@ -33,7 +33,7 @@ int merge(int l,int m,int h){
             j++;
     }
 
-    for(int i = 0;i<n;i++){
+    for(int i = l;i<h;i++){
         arr[i] = new_arr[i];
     }
 
