@@ -1,0 +1,64 @@
+#include <iostream>
+using namespace std;
+int n;
+int arr[100000];
+
+int merge(int l,int m,int h){
+    int i = l;
+    int j = m+1;
+    int new_arr[n];
+    int index = 0;
+
+    while(i<=m&&j<=l){
+        if(arr[i]<arr[j]){
+            new_arr[index] = arr[i];
+            index++;
+            i++;
+        }else{
+            new_arr[index] = arr[j];
+            index++; 
+            j++
+        }
+    }
+
+    while(i<=m){
+            new_arr[index] = arr[i];
+            index++;
+            i++;
+    }
+
+    while(j<=l){
+            new_arr[index] = arr[j];
+            index++;
+            j++;
+    }
+
+    for(int i = 0;i<n;i++){
+        arr[i] = new_arr[i];
+    }
+
+}
+
+void mergesort(int l,int h){
+    if(l<h){
+
+        int m = (l+h)/2;
+        mergesort(l,m);
+        mergesort(m+1,h);
+        merge(l,h);
+
+
+    }
+}
+
+int main(){
+    cin>>n;
+    for(int i = 0;i<n;i++){
+        cin>>arr[i];
+    }
+    mergesort(0,n-1);
+    for(int i = 0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+
+}
