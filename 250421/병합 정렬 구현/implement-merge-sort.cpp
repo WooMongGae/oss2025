@@ -24,7 +24,7 @@ void merge(int l,int m,int h){
         new_arr[index++] = arr[j++];
     }
 
-    for(int k = l;k<h;k++){
+    for(int k = l;k<=h;k++){
         arr[k]=new_arr[k];
     }
 }
