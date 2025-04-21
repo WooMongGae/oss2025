@@ -2,6 +2,9 @@
 #include <algorithm>
 using namespace std;
 
+int n;
+int arr[100000];
+
 int quick(int l,int h){
     int pivot = h;
     int i = l-1;
