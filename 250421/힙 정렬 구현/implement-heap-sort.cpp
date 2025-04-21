@@ -10,10 +10,10 @@ void heapify(int max,int i){
     int a=i*2;
     int b=i*2+1;
 
-    if(arr[largest]<arr[a]&&a<=max){
+    if(a<=max&&arr[largest]<arr[a]){
         largest = a;
     }
-    if(arr[largest]<arr[b]&&b<=max){
+    if(b<=max&&arr[largest]<arr[b]){
         largest = b;
     }
     if(largest !=i){
