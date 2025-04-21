@@ -9,7 +9,7 @@ int merge(int l,int m,int h){
     int new_arr[n];
     int index = 0;
 
-    while(i<=m&&j<=l){
+    while(i<=m&&j<=h){
         if(arr[i]<arr[j]){
             new_arr[index] = arr[i];
             index++;
