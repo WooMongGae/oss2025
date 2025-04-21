@@ -5,7 +5,7 @@ int n;
 int arr[100];
 
 int maxscore(int a){
-    if(a==0) return a[0];
+    if(a==0) return arr[0];
     return max(arr[a],maxscore(a-1));
 
 }
