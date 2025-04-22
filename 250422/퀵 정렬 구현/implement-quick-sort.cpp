@@ -6,8 +6,7 @@ int arr[100000];
 int quick(int l,int h){
     int pivot = arr[h];
     int i = l-1;
-    int index = l;
-    for(;index<h;index++){
+    for(int index = 1;index<h;index++){
         if(arr[index]<pivot){
             i++;
             swap(arr[i],arr[index]);
@@ -19,12 +18,9 @@ int quick(int l,int h){
 
 void quicksort(int l,int h){
     if(l<h){
-        int pivot = quick(l,h);
-        quicksort(l,pivot-1);
-        quicksort(pivot+1,h);
-
-    }else{
-        return;
+        int m =quick(l,h);
+        quicksort(l,m-1);
+        quicksort(m+1,h);
     }
 }
 
@@ -37,7 +33,4 @@ int main(){
     for(int i = 0;i<n;i++){
         cout<<arr[i]<<" ";
     }
-
-
-
 }
