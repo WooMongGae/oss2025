@@ -1,5 +1,5 @@
 #include <iostream>
-#include <algoorithm>
+#include <algorithm>
 using namespace std;
 int n;
 int arr[100001];
