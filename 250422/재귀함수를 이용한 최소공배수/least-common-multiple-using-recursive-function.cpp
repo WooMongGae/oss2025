@@ -5,7 +5,7 @@ int arr[100];
 
 int lcd(int x,int y){
     int gcd = 1;
-    for(int i =1;i<min(x,y);i++){
+    for(int i =1;i<=min(x,y);i++){
         if(x%i==0&&y%i==0){
             gcd = i;
         }
