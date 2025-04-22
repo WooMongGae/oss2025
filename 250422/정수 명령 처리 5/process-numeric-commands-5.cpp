@@ -3,10 +3,9 @@
 #include <string>
 using namespace std;
 int n;
-vector<int> v;
-
 int main(){
   cin>>n;
+  vector<int> v;
   for(int i = 0;i<n;i++){
     string command;
     cin>>command;
@@ -18,14 +17,12 @@ int main(){
       v.pop_back();
     }else if(command == "size"){
       cout<<v.size()<<endl;
-    }else if(command == "get"){
+    }else if(command =="get"){
       int index;
       cin>>index;
       cout<<v[index-1]<<endl;
     }
-
   }
-
 
 
 
