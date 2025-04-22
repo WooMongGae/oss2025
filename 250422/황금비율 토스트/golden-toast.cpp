@@ -36,6 +36,7 @@ int main(){
             char c;
             cin>>c;
             l.insert(it,c);
+            it++;
         }
     }
 
