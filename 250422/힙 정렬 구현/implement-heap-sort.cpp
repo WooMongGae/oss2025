@@ -2,6 +2,7 @@
 #include <algorithm>
 using namespace std;
 int arr[100000];
+int n;
 void heapify(int max,int i){
     int largest = i;
     int a = i*2+1;
