@@ -1,12 +1,11 @@
 #include <iostream>
-#include <algorithm>
 using namespace std;
 int n;
-int arr[10];
+int arr[100];
 
 int lcd(int x,int y){
-    int gcd;
-    for(int i = 1;i<=min(x,y);i++){
+    int gcd = 1;
+    for(int i =1;i<min(x,y);i++){
         if(x%i==0&&y%i==0){
             gcd = i;
         }
@@ -15,7 +14,8 @@ int lcd(int x,int y){
 }
 
 int f(int a){
-    if(a==0) return arr[0];
+    if(a==0) return arr[a];
+
     return lcd(arr[a],f(a-1));
 }
 
