@@ -2,16 +2,15 @@
 using namespace std;
 int n;
 int arr[100];
-
 void insert(){
-    for(int i = 1;i<n;i++){
+    for(int i = 1;i<=n;i++){
+        int index = i-1;
         int key = arr[i];
-        int j = i-1;
-        while(j>=0&&arr[j]>key){
-            arr[j+1] = arr[j];
-            j--;
+        while(index>=0&&arr[index]>key){
+            index--;
+            arr[index+1] = arr[index];
         }
-        arr[j+1] = key;
+        arr[index+1] = key;
     }
 }
 
@@ -24,6 +23,4 @@ int main(){
     for(int i = 0;i<n;i++){
         cout<<arr[i]<<" ";
     }
-
-
 }
