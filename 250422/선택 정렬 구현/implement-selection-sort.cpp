@@ -11,8 +11,8 @@ void select(){
             }
         }
         int temp = arr[key];
-        arr[key] = arr[j];
-        arr[j] = temp;
+        arr[key] = arr[i];
+        arr[i] = temp;
     }
 }
 
