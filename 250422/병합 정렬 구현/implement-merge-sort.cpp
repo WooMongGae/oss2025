@@ -2,7 +2,7 @@
 #include <algorithm>
 using namespace std;
 int n;
-int arr[100];
+int arr[100000];
 
 void merge(int l,int m,int h){
     int i = l;
