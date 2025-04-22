@@ -7,8 +7,8 @@ void insert(){
         int index = i-1;
         int key = arr[i];
         while(index>=0&&arr[index]>key){
-            index--;
             arr[index+1] = arr[index];
+            index--;
         }
         arr[index+1] = key;
     }
