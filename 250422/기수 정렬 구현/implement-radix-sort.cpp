@@ -23,7 +23,7 @@ void number(){
 int main(){
   cin>>n;
   for(int i = 0;i<n;i++){
-    cin>arr[i];
+    cin>>arr[i];
   }
   number();
   for(int i = 0;i<n;i++){
