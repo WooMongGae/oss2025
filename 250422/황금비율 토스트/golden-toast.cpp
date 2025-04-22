@@ -1,10 +1,12 @@
 #include <iostream>
-#include <string>
 #include <list>
+#include <string>
 using namespace std;
-int n,m;
 list<char> l;
+
+
 int main(){
+    int n,m;
     cin>>n>>m;
     for(int i = 0;i<n;i++){
         char c;
@@ -12,24 +14,21 @@ int main(){
         l.push_back(c);
     }
 
-    list<char>::iterator it=l.end();
+    list<char>::iterator it = l.end();
+
     for(int i = 0;i<m;i++){
         string command;
         cin>>command;
         if(command == "L"){
-            if(it == l.begin()){
-            }else{
+            if(it !=l.begin()){
                 it--;
             }
         }else if(command == "R"){
-            if(it == l.end()){
-            }else{
+            if(it !=l.end()){
                 it++;
             }
         }else if(command == "D"){
-            if(it == l.end()){
-
-            }else{
+            if(command !=l.end()){
                 it = l.erase(it);
             }
         }else if(command == "P"){
@@ -39,10 +38,8 @@ int main(){
         }
     }
 
-    it = l.begin();
-    for(int i = 0;i<l.size();i++){
+    for(int it =l.begin();i!=l.end();it++){
         cout<<*it;
-        it++;
     }
 
 
