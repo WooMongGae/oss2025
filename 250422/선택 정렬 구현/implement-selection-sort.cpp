@@ -2,18 +2,17 @@
 using namespace std;
 int n;
 int arr[100];
-
 void select(){
     for(int i = 0;i<n;i++){
-        int p = i;
+        int key = i;
         for(int j = i;j<n;j++){
-            if(arr[j]<arr[p]){
-                p = j;
+            if(arr[key]>arr[j]){
+                key = j;
             }
         }
-        int temp = arr[i];
-        arr[i] = arr[p];
-        arr[p] = temp;
+        int temp = arr[key];
+        arr[key] = arr[j];
+        arr[j] = temp;
     }
 }
 
@@ -26,6 +25,4 @@ int main(){
     for(int i = 0;i<n;i++){
         cout<<arr[i]<<" ";
     }
-
-
 }
