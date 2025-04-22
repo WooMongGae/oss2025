@@ -2,7 +2,6 @@
 using namespace std;
 int n;
 int arr[100];
-
 void bubble(){
     bool sorted = true;
     do{
@@ -15,6 +14,7 @@ void bubble(){
                 sorted = false;
             }
         }
+
     }while(!sorted);
 }
 
@@ -27,6 +27,5 @@ int main(){
     for(int i = 0;i<n;i++){
         cout<<arr[i]<<" ";
     }
-
 
 }
