@@ -19,7 +19,7 @@ void heapify(int max,int i){
     }
 }
 
-int hip(){
+void hip(){
     for(int i = n/2;i>=1;i--){
         heapify(n,i);
     }
