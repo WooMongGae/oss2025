@@ -12,7 +12,7 @@ void number(){
     }
     int index = 0;
     for(int x= 0;x<10;x++){
-      for(int y = 0;y<arr[y].size();y++){
+      for(int y = 0;y<arr[x].size();y++){
         arr[index++] = v[x][y];
       }
     }
