@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <list>
+using namespace std;
 int n,m;
 list<char> l;
 int main(){
