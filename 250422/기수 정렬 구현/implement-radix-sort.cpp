@@ -8,7 +8,7 @@ void number(){
   for(int i = 0;i<6;i++){
     vector<int> v[10];
     for(int j = 0;j<n;j++){
-      v[arr[j]/p%10].push_back(arr[i]);
+      v[arr[j]/p%10].push_back(arr[j]);
     }
     int index = 0;
     for(int x = 0;x<10;x++){
