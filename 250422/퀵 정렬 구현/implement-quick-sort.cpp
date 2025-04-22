@@ -6,7 +6,7 @@ int arr[100000];
 int quick(int l,int h){
     int pivot = arr[h];
     int i = l-1;
-    for(int index = 1;index<h;index++){
+    for(int index = l;index<h;index++){
         if(arr[index]<pivot){
             i++;
             swap(arr[i],arr[index]);
