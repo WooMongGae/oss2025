@@ -3,7 +3,6 @@
 using namespace std;
 int n;
 int arr[100000];
-
 void merge(int l,int m,int h){
     int i = l;
     int j = m+1;
@@ -22,7 +21,7 @@ void merge(int l,int m,int h){
     while(j<=h){
         new_arr[index++] = arr[j++];
     }
-    for(int k = l;k<=h;k++){
+    for(int k =l;k<=h;k++){
         arr[k] = new_arr[k];
     }
 }
