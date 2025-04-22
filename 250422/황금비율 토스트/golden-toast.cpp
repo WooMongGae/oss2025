@@ -28,7 +28,7 @@ int main(){
                 it++;
             }
         }else if(command == "D"){
-            if(command !=l.end()){
+            if(it !=l.end()){
                 it = l.erase(it);
             }
         }else if(command == "P"){
