@@ -30,7 +30,7 @@ int main(){
             if(it == l.end()){
 
             }else{
-                l.erease(it);
+                l.erase(it);
             }
         }else if(command == "P"){
             char c;
