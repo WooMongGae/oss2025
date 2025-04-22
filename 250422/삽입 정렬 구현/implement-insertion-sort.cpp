@@ -3,7 +3,7 @@ using namespace std;
 int n;
 int arr[100];
 void insert(){
-    for(int i = 1;i<=n;i++){
+    for(int i = 1;i<n;i++){
         int index = i-1;
         int key = arr[i];
         while(index>=0&&arr[index]>key){
