@@ -38,7 +38,7 @@ int main(){
         }
     }
 
-    for(it =l.begin();i!=l.end();it++){
+    for(it =l.begin();it!=l.end();it++){
         cout<<*it;
     }
 
