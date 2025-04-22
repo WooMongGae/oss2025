@@ -30,13 +30,12 @@ int main(){
             if(it == l.end()){
 
             }else{
-                l.erase(it);
+                it = l.erase(it);
             }
         }else if(command == "P"){
             char c;
             cin>>c;
             l.insert(it,c);
-            it++;
         }
     }
 
