@@ -15,7 +15,7 @@ int main(){
         if(command == "push"){
             int A;
             cin>> A;
-            S.push(A);
+            s.push(A);
         } else if(command == "pop"){
             int p = s.top();
             s.pop();
